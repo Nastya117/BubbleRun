@@ -14,5 +14,17 @@ androiddeployqt --output android --verbose --input android-libBubbleRun.so-deplo
 mkdir apk
 cp android/build/outputs/apk/android-debug.apk apk/BubbleRun.apk
 git add apk/BubbleRun.apk
+
+file="1.txt"
+while read line
+do
+ve=$line
+echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASSS $line"
+done < $file
+
 git commit -a -m "Обновление apk"
+git tag ve
 git push
+
+ve=$ve+1
+$ve > file
