@@ -59,13 +59,13 @@ void Auu::pana1y(int y)
     papanay();
     pain();
     update();
+
 }
 
 
 Auu::Auu()
 {
     img->fill(Qt::white);
-    // Set up the desired format, for example:
     format.setSampleSize(16);
     format.setCodec("audio/pcm");
     format.setByteOrder(QAudioFormat::LittleEndian);

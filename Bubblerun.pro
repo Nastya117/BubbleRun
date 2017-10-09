@@ -59,7 +59,8 @@ DISTFILES += \
     3rdparty/fftreal/license.txt \
     3rdparty/fftreal/readme.txt \
     3rdparty/fftreal/testapp.dpr \
-    3rdparty/fftreal/fftreal.pas
+    3rdparty/fftreal/fftreal.pas \
+    build_apk.sh
 
 HEADERS += \
     3rdparty/fftreal/stopwatch/ClockCycleCounter.h \
