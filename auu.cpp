@@ -25,7 +25,7 @@ void Auu::sst()
     arr.resize(16384);
     ama = 0; fric = 0;
     ff.calculateSpectrum(arr, 48000, 2, &ama, &fric);
-    fric /= 1000;
+    fric /= 1003;
     fric = qMin(1.0, fric);
     fric = (fric + fric0) / 2;
     fric0 = fric;

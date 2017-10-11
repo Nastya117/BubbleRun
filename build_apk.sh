@@ -19,12 +19,15 @@ file="1.txt"
 while read line
 do
 ve=$line
-echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASSS $line"
+echo "$line"
 done < $file
 
 git commit -a -m "Обновление apk"
-git tag ve
-git push
+git push origin master
+git tag $ve
+git push origin $ve
 
-ve=$ve+1
-$ve > file
+declare -i x=$ve
+declare -i y=1
+x=$((x+y))
+echo $x > ./1.txt
