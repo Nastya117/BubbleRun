@@ -67,8 +67,7 @@ StackView
                 text: "Играть"
                 onClicked:
                 {
-                    stava.replace(kak)
-                    aurum.startau()
+                    stava.replace(qot)
                 }
             }
 
@@ -80,12 +79,28 @@ StackView
 Item
 {
     id: qot
+    visible: false
     anchors.fill: parent
     Button
     {
+        anchors.top: parent.top
+        anchors.topMargin: 40
+        text: "Режим1"
         onClicked:
         {
-            stava.replace(че-нить)
+            stava.replace(kak)
+            aurum.startau()
+        }
+    }
+
+    Button
+    {
+        anchors.top: parent.top
+        anchors.topMargin: 100
+        text: "Режим2"
+        onClicked:
+        {
+            //stava.replace(че-нить)
         }
     }
 
