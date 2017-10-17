@@ -52,6 +52,9 @@ signals:
     void amaChanged();
     void fricChanged();
 
+public slots:
+        void startau();
+
 
 
 

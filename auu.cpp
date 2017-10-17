@@ -62,8 +62,7 @@ void Auu::pana1y(int y)
 
 }
 
-
-Auu::Auu()
+void Auu::startau()
 {
     img->fill(Qt::white);
     format.setSampleSize(16);
@@ -87,5 +86,10 @@ Auu::Auu()
 
 
     star = audio->start();
+}
+
+
+Auu::Auu()
+{
 
 }
