@@ -44,8 +44,8 @@ void Auu::pana1x(int x)
 {
     panaxa = x;
     papanax();
-   // pain();
-   // update();
+    pain();
+    update();
 }
 
 int Auu::panay()
@@ -57,8 +57,8 @@ void Auu::pana1y(int y)
 {
     panaya = y;
     papanay();
-    //pain();
-   // update();
+    pain();
+    update();
 
 }
 

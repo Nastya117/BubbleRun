@@ -11,6 +11,9 @@ ApplicationWindow
     height: 480
 
 
+    Item
+    {
+        id: kak
 
 Auu
 {
@@ -23,7 +26,6 @@ Auu
 Item
 {
 id: qqq
-visible: false
 anchors.fill: parent
 Rectangle
 {
@@ -46,25 +48,49 @@ Rectangle
 }
 
 }
+    }
+
+
+StackView
+{
+    id: stava
+    anchors.fill: parent
+    initialItem:
+        Item
+        {
+            id: aa
+            Button
+            {
+                anchors.top: parent.top
+                anchors.topMargin: 40
+                anchors.bottomMargin: 200
+                text: "Играть"
+                onClicked:
+                {
+                    stava.replace(kak)
+                    aurum.startau()
+                }
+            }
+
+        }
+}
 
 
 
 Item
 {
-    id: aa
+    id: qot
+    anchors.fill: parent
     Button
     {
-        anchors.top: parent.top
-        anchors.topMargin: 40
-        anchors.bottomMargin: 200
-        text: "Играть"
         onClicked:
         {
-            qqq.visible = true
-            aa.visible = false
-            aurum.startau()
+            stava.replace(че-нить)
         }
     }
 
 }
+
+
+
 }
