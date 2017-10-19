@@ -14,6 +14,33 @@ ApplicationWindow
     Item
     {
         id: kak
+        visible: false
+
+
+        Button
+        {
+            x: 100
+            y: 100
+            width: 100
+            height: 50
+
+            background:
+                Rectangle
+            {
+                color: "white"
+                border.color: "black"
+                border.width: 2
+            }
+
+
+            text: "Сохранить"
+            onClicked:
+            {
+                aurum.sova()
+            }
+        }
+
+
 
 Auu
 {
@@ -59,11 +86,34 @@ StackView
         Item
         {
             id: aa
+
+
+            Image
+            {
+                id: imma
+                source: "Wig7e6EnQhU.jpg"
+                anchors.centerIn: parent
+            }
+
+
             Button
             {
-                anchors.top: parent.top
-                anchors.topMargin: 40
-                anchors.bottomMargin: 200
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 30
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.rightMargin: parent.width * 0.2
+                anchors.leftMargin: parent.width * 0.2
+
+                background:
+                    Rectangle
+                {
+                    color: "white"
+                    border.color: "black"
+                    border.width: 2
+                }
+
+
                 text: "Играть"
                 onClicked:
                 {
@@ -81,26 +131,100 @@ Item
     id: qot
     visible: false
     anchors.fill: parent
+
+    Image
+    {
+        id: imma1
+        source: "KcQH7HOstb4.jpg"
+        anchors.centerIn: parent
+    }
+
     Button
     {
-        anchors.top: parent.top
-        anchors.topMargin: 40
+        id: bu
+        anchors.centerIn: parent
+
+        background:
+            Rectangle
+        {
+            color: "white"
+            border.color: "black"
+            border.width: 2
+        }
+
+
         text: "Режим1"
         onClicked:
         {
-            stava.replace(kak)
-            aurum.startau()
+            stava.replace(aa1)
         }
     }
 
     Button
     {
-        anchors.top: parent.top
-        anchors.topMargin: 100
+
+        x: bu.x
+        width: bu.width
+        height: bu.height
+        y: bu.y + 50
         text: "Режим2"
+
+        background:
+            Rectangle
+        {
+            color: "white"
+            border.color: "black"
+            border.width: 2
+        }
+
         onClicked:
         {
             //stava.replace(че-нить)
+        }
+    }
+
+}
+
+
+
+
+Item
+{
+    id: aa1
+    visible: false
+
+
+    Image
+    {
+        id: imma2
+        source: "Wig7e6EnQhU.jpg"
+        anchors.centerIn: parent
+    }
+
+
+    Button
+    {
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 30
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.rightMargin: parent.width * 0.2
+        anchors.leftMargin: parent.width * 0.2
+
+        background:
+            Rectangle
+        {
+            color: "white"
+            border.color: "black"
+            border.width: 2
+        }
+
+
+        text: "Старт"
+        onClicked:
+        {
+            stava.replace(kak)
+            aurum.startau()
         }
     }
 

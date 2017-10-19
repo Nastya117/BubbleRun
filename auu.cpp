@@ -1,5 +1,6 @@
 #include "auu.h"
 #include <QPainter>
+#include <QDebug>
 
 
 void Auu::paint(QPainter *pan)
@@ -86,6 +87,11 @@ void Auu::startau()
 
 
     star = audio->start();
+}
+
+void Auu::sova()
+{
+    qDebug() << "aaaaaaaaaaaaaaaaaaaaá";
 }
 
 

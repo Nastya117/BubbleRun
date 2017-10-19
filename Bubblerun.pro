@@ -60,7 +60,10 @@ DISTFILES += \
     3rdparty/fftreal/readme.txt \
     3rdparty/fftreal/testapp.dpr \
     3rdparty/fftreal/fftreal.pas \
-    build_apk.sh
+    build_apk.sh \
+    Wig7e6EnQhU.jpg \
+    Wig7e6EnQhU.jpg \
+    Wig7e6EnQhU.jpg
 
 HEADERS += \
     3rdparty/fftreal/stopwatch/ClockCycleCounter.h \
