@@ -10,35 +10,15 @@ ApplicationWindow
     width: 640
     height: 480
 
+    Text
+    {
+        text: aurum.vor()
+    }
+
 
     Item
     {
         id: kak
-        visible: false
-
-
-        Button
-        {
-            x: 100
-            y: 100
-            width: 100
-            height: 50
-
-            background:
-                Rectangle
-            {
-                color: "white"
-                border.color: "black"
-                border.width: 2
-            }
-
-
-            text: "Сохранить"
-            onClicked:
-            {
-                aurum.sova()
-            }
-        }
 
 
 

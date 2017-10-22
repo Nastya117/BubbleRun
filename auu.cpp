@@ -2,6 +2,9 @@
 #include <QPainter>
 #include <QDebug>
 
+static const int war =
+#include "1.txt"
+;
 
 void Auu::paint(QPainter *pan)
 {
@@ -89,10 +92,13 @@ void Auu::startau()
     star = audio->start();
 }
 
-void Auu::sova()
+int Auu::vor()
 {
-    qDebug() << "aaaaaaaaaaaaaaaaaaaaá";
+    return war;
 }
+
+
+
 
 
 Auu::Auu()
