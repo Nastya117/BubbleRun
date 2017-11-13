@@ -55,6 +55,7 @@ signals:
 public slots:
         void startau();
         int vor();
+        void sova();
 
 
 

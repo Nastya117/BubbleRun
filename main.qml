@@ -34,6 +34,25 @@ Item
 {
 id: qqq
 anchors.fill: parent
+
+
+
+Button
+{
+    text: "Сохранить"
+    visible: false
+    id: but
+    anchors.right: parent.right
+    anchors.rightMargin: 20
+    anchors.bottom: parent.bottom
+    anchors.bottomMargin: 20
+    onClicked:
+    {
+        aurum.sova();
+    }
+}
+
+
 Rectangle
 {
     id: rec;
@@ -205,6 +224,7 @@ Item
         {
             stava.replace(kak)
             aurum.startau()
+            but.visible = true
         }
     }
 

@@ -1,6 +1,8 @@
 #include "auu.h"
 #include <QPainter>
 #include <QDebug>
+#include <QDir>
+#include <QStandardPaths>
 
 static const int war =
 #include "1.txt"
@@ -95,6 +97,13 @@ void Auu::startau()
 int Auu::vor()
 {
     return war;
+}
+
+void Auu::sova()
+{
+    QString d = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/BubbleRun.jpg";
+    img->save(d);
+    img->fill(Qt::white);
 }
 
 
