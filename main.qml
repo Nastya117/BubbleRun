@@ -27,7 +27,9 @@ ApplicationWindow
         {
             visible: true
             anchors.fill: parent
-            text: "Оля, напиши меня!"
+            text: "      Перемещение шарика по оси x зависит от
+громкости подаваемого звука,
+по у - от частоты"
         }
 
         Button
