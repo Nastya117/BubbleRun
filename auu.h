@@ -9,6 +9,7 @@
 #include <QtMultimediaWidgets>
 #include <iostream>
 #include <app/spectrumanalyser.h>
+#include <QVariant>
 
 class Auu : public QQuickPaintedItem
 {
@@ -18,6 +19,7 @@ class Auu : public QQuickPaintedItem
     Q_PROPERTY(double fric MEMBER fric NOTIFY fricChanged)
     Q_PROPERTY(int panaxa READ panax WRITE pana1x NOTIFY papanax)
     Q_PROPERTY(int panaya READ panay WRITE pana1y NOTIFY papanay)
+    //Q_PROPERTY(QVariantList urki READ urki NOTIFY urkiChanged)
     Q_PROPERTY(QImage *img MEMBER img NOTIFY imgChanged)
     public:
     QAudioInput* audio; // Class member
@@ -35,6 +37,7 @@ class Auu : public QQuickPaintedItem
     double fric;
     double ama0 = 0;
     double fric0 = 0;
+    bool ur = false;
 
 
     void sst();
@@ -51,11 +54,17 @@ signals:
     void papanay();
     void amaChanged();
     void fricChanged();
-
+    void ploho();
+    void horosho();
+    void urkiChanged();
 public slots:
         void startau();
         int vor();
         void sova();
+        QVariantList urki();
+        void cgamga(QString a);
+        bool putt(int x, int y);
+        void urchi(QString a);
 
 
 

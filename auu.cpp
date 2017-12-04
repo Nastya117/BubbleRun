@@ -3,10 +3,12 @@
 #include <QDebug>
 #include <QDir>
 #include <QStandardPaths>
+#include <QSize>
+#include <QRgb>
 
 static const int war =
-#include "1.txt"
-;
+        #include "1.txt"
+        ;
 
 void Auu::paint(QPainter *pan)
 {
@@ -19,6 +21,19 @@ void Auu::pain()
     pan.setPen(Qt::blue);
     pan.drawEllipse(panaxa, panaya, 2, 2);
     imgChanged();
+    if (ur)
+    {
+        if (!putt(panaxa, panaya))
+        {
+            ploho();
+            ur = false;
+        }
+        if (panaxa < 300 && panaxa > 250 && panaya > 300 && panaya < 350)
+        {
+            horosho();
+            ur = false;
+        }
+    }
 }
 
 void Auu::sst()
@@ -68,9 +83,13 @@ void Auu::pana1y(int y)
 
 }
 
+
+
+
+
+
 void Auu::startau()
 {
-    img->fill(Qt::white);
     format.setSampleSize(16);
     format.setCodec("audio/pcm");
     format.setByteOrder(QAudioFormat::LittleEndian);
@@ -106,11 +125,132 @@ void Auu::sova()
     img->fill(Qt::white);
 }
 
+QVariantList Auu::urki()
+{
+    QString d = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/BubbleRun.txt";
+    QFile fi(d);
+    if (fi.open(QFile::ReadOnly)) {
+        QByteArray dat = fi.readAll();
+        QJsonDocument doco = QJsonDocument::fromJson(dat);
+        return doco.toVariant().toList();
+    } else {
+        QVariantList rez;
+        QVariantMap a;
+        a["no"] = QVariant("1");
+        a["nom"] = QVariant("Уровень 1");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/1.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("2");
+        a["nom"] = QVariant("Уровень 2");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/2.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("3");
+        a["nom"] = QVariant("Уровень 3");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/3.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("4");
+        a["nom"] = QVariant("Уровень 4");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/4.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("5");
+        a["nom"] = QVariant("Уровень 5");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/5.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("6");
+        a["nom"] = QVariant("Уровень 6");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/6.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("7");
+        a["nom"] = QVariant("Уровень 7");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/7.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("8");
+        a["nom"] = QVariant("Уровень 8");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/8.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("9");
+        a["nom"] = QVariant("Уровень 9");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/9.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        a["no"] = QVariant("10");
+        a["nom"] = QVariant("Уровень 10");
+        a["pro"] = QVariant("n");
+        a["ka"] = QVariant(":/10.jpg");
+        rez.append(QVariant::fromValue(a));
+
+        return rez;
+    }
+}
+
+void Auu::cgamga(QString a)
+{
+    img->load(a);
+    update();
+    ur = true;
+}
+
+
+
+
+bool Auu::putt(int x, int y)
+{
+
+    if (x < 100)
+        x += 100;
+
+    if (y < 100)
+        y += 100;
+
+    for (int i = x - 100; i < x + 100; ++i)
+        for (int j = y - 100; j < y + 100; ++j)
+        {
+            if (qGreen(img->pixel(i, j)) - qBlue(img->pixel(i, j)) > 10)
+                return true;
+        }
+    return false;
+}
+
+void Auu::urchi(QString a)
+{
+    QString d = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/BubbleRun.txt";
+    QVariantList urkid = urki();
+    int num = a.toInt() - 1;
+    QVariantMap ma = urkid[num].toMap();
+    ma["pro"] = "y";
+    urkid[num] = QVariant::fromValue(ma);
+
+    QFile fi(d);
+    fi.open(QFile::WriteOnly);
+
+    QJsonDocument doco = QJsonDocument::fromVariant(QVariant::fromValue(urkid));
+    fi.write(doco.toJson());
+    urkiChanged();
+}
+
 
 
 
 
 Auu::Auu()
 {
+    img->fill(Qt::white);
 
 }
