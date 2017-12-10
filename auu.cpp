@@ -148,7 +148,7 @@ QVariantList Auu::urki()
         a["no"] = QVariant("1");
         a["nom"] = QVariant("Уровень 1");
         a["pro"] = QVariant("n");
-        a["ka"] = QVariant(":/1.png");
+        a["ka"] = QVariant(":/1.jpg");
         rez.append(QVariant::fromValue(a));
 
         a["no"] = QVariant("2");
