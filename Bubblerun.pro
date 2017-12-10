@@ -64,7 +64,6 @@ DISTFILES += \
     Wig7e6EnQhU.jpg \
     Wig7e6EnQhU.jpg \
     Wig7e6EnQhU.jpg
-
 HEADERS += \
     3rdparty/fftreal/stopwatch/ClockCycleCounter.h \
     3rdparty/fftreal/stopwatch/ClockCycleCounter.hpp \
