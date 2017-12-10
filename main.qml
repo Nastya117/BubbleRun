@@ -213,7 +213,7 @@ ApplicationWindow
                 radius: 20
                 width: 20
                 height: 20
-                x: w.width * aurum.ama * 4
+                x: w.width * aurum.ama
                 y: w.height - w.height * aurum.fric
 
                 color: "red"

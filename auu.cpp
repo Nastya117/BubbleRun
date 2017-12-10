@@ -28,7 +28,7 @@ void Auu::pain()
             ploho();
             ur = false;
         }
-        if (panaxa < 300 && panaxa > 250 && panaya > 300 && panaya < 350)
+        if (qRed(img->pixel(panaxa, panaya)) - qBlue(img->pixel(panaxa, panaya)) > 50)
         {
             horosho();
             ur = false;
@@ -222,11 +222,11 @@ void Auu::cgamga(QString a)
 bool Auu::putt(int x, int y)
 {
 
-    if (x < 5)
-        x += 5;
+    if (x < 10)
+        x += 10;
 
-    if (y < 5)
-        y += 5;
+    if (y < 10)
+        y += 10;
 
     for (int i = x - 5; i < x + 5; ++i)
         for (int j = y - 5; j < y + 5; ++j)
