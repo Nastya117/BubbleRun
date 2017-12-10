@@ -59,6 +59,7 @@ signals:
     void urkiChanged();
 public slots:
         void startau();
+        void stopau();
         int vor();
         void sova();
         QVariantList urki();

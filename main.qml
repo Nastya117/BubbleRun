@@ -168,6 +168,7 @@ ApplicationWindow
             {
                 urina.visible = true
                 kak.visible = false
+                aurum.stopau()
             }
 
             onHorosho:
@@ -176,6 +177,7 @@ ApplicationWindow
                 kak.visible = false
                 aurum.urchi(kak.ur)
                 urina.model = aurum.urki()
+                aurum.stopau()
             }
         }
 
@@ -212,7 +214,7 @@ ApplicationWindow
                 width: 20
                 height: 20
                 x: w.width * aurum.ama
-                y: w.height - w.height * aurum.fric * aurum.fric
+                y: w.height - w.height * aurum.fric
 
                 color: "red"
 

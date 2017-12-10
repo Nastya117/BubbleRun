@@ -113,6 +113,15 @@ void Auu::startau()
     star = audio->start();
 }
 
+void Auu::stopau()
+{
+    audio->stop();
+    fric = 0;
+    ama = 0;
+    fricChanged();
+    amaChanged();
+}
+
 int Auu::vor()
 {
     return war;
@@ -139,7 +148,7 @@ QVariantList Auu::urki()
         a["no"] = QVariant("1");
         a["nom"] = QVariant("Уровень 1");
         a["pro"] = QVariant("n");
-        a["ka"] = QVariant(":/1.jpg");
+        a["ka"] = QVariant(":/1.png");
         rez.append(QVariant::fromValue(a));
 
         a["no"] = QVariant("2");
@@ -213,14 +222,14 @@ void Auu::cgamga(QString a)
 bool Auu::putt(int x, int y)
 {
 
-    if (x < 100)
-        x += 100;
+    if (x < 5)
+        x += 5;
 
-    if (y < 100)
-        y += 100;
+    if (y < 5)
+        y += 5;
 
-    for (int i = x - 100; i < x + 100; ++i)
-        for (int j = y - 100; j < y + 100; ++j)
+    for (int i = x - 5; i < x + 5; ++i)
+        for (int j = y - 5; j < y + 5; ++j)
         {
             if (qGreen(img->pixel(i, j)) - qBlue(img->pixel(i, j)) > 10)
                 return true;
