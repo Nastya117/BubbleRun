@@ -1,4 +1,4 @@
-#Mon Dec 18 11:03:10 MSK 2017
+#Mon Dec 18 11:06:17 MSK 2017
 base.0=/Users/nastya/Zahar/BubbleRun/android/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/nastya/Zahar/BubbleRun/android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
