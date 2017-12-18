@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/nastya/Zahar/BubbleRun/android/libs/QtAndroid-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="dc37a9cca41bbda29e2bfa3a0ce3309ea087ac87">
+        <dex dex="/Users/nastya/Zahar/BubbleRun/android/build/intermediates/pre-dexed/release/QtAndroid-bundled_284a4dc80df65054f5a78e4d1ce3b4d36cd03fb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nastya/Zahar/BubbleRun/android/libs/QtAndroidBearer-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c37d2a15a609dbef07bac7ffc3da4db224e361d7">
+        <dex dex="/Users/nastya/Zahar/BubbleRun/android/build/intermediates/pre-dexed/release/QtAndroidBearer-bundled_b1f2a3d0a06bcfac55abcea9d07ce44bbdf9d089.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nastya/Zahar/BubbleRun/android/libs/QtMultimedia-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1a5ef0d3816b07c1b66cb075f3e609057662039f">
+        <dex dex="/Users/nastya/Zahar/BubbleRun/android/build/intermediates/pre-dexed/release/QtMultimedia-bundled_641ebdb855a4a38be3a791f6766638dc543fd004.jar" />
+    </item>
+
+</items>

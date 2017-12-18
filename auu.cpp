@@ -129,7 +129,7 @@ int Auu::vor()
 
 void Auu::sova()
 {
-    QString d = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/BubbleRun.jpg";
+    QString d = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/BubbleRun" + QString::number(1) + ".jpg";
     img->save(d);
     img->fill(Qt::white);
 }

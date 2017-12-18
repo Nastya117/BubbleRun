@@ -1,0 +1,188 @@
+[
+    {
+        "outputFile": "/Users/nastya/Zahar/BubbleRun/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 310,
+                    "endColumn": 12,
+                    "endOffset": 43669
+                },
+                "from": {
+                    "file": "/Users/nastya/Zahar/BubbleRun/android/res/values/libs.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3937,
+                        "endLine": 373,
+                        "endColumn": 12,
+                        "endOffset": 47551
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 311,
+                    "startColumn": 4,
+                    "startOffset": 43674,
+                    "endLine": 344,
+                    "endColumn": 12,
+                    "endOffset": 46837
+                },
+                "from": {
+                    "file": "/Users/nastya/Zahar/BubbleRun/android/res/values/libs.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endLine": 64,
+                        "endColumn": 12,
+                        "endOffset": 3932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 345,
+                    "startColumn": 4,
+                    "startOffset": 46842,
+                    "endLine": 347,
+                    "endColumn": 12,
+                    "endOffset": 46891
+                },
+                "from": {
+                    "file": "/Users/nastya/Zahar/BubbleRun/android/res/values/libs.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endLine": 11,
+                        "endColumn": 12,
+                        "endOffset": 340
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 348,
+                    "startColumn": 4,
+                    "startOffset": 46896,
+                    "endLine": 364,
+                    "endColumn": 13,
+                    "endOffset": 47312
+                },
+                "from": {
+                    "file": "/Users/nastya/Zahar/BubbleRun/android/res/values/libs.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 5,
+                        "startOffset": 347,
+                        "endLine": 29,
+                        "endColumn": 13,
+                        "endOffset": 763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 365,
+                    "startColumn": 4,
+                    "startOffset": 47317,
+                    "endLine": 367,
+                    "endColumn": 12,
+                    "endOffset": 47427
+                },
+                "from": {
+                    "file": "/Users/nastya/Zahar/BubbleRun/android/res/values/libs.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 368,
+                    "startColumn": 4,
+                    "startOffset": 47432,
+                    "endColumn": 107,
+                    "endOffset": 47535
+                },
+                "from": {
+                    "file": "/Users/nastya/Qt/5.9.1/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 319,
+                        "endColumn": 107,
+                        "endOffset": 422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 369,
+                    "startColumn": 4,
+                    "startOffset": 47540,
+                    "endColumn": 121,
+                    "endOffset": 47657
+                },
+                "from": {
+                    "file": "/Users/nastya/Qt/5.9.1/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 197,
+                        "endColumn": 121,
+                        "endOffset": 314
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 370,
+                    "startColumn": 4,
+                    "startOffset": 47662,
+                    "endColumn": 111,
+                    "endOffset": 47769
+                },
+                "from": {
+                    "file": "/Users/nastya/Qt/5.9.1/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 85,
+                        "endColumn": 111,
+                        "endOffset": 192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 371,
+                    "startColumn": 4,
+                    "startOffset": 47774,
+                    "endColumn": 84,
+                    "endOffset": 47854
+                },
+                "from": {
+                    "file": "/Users/nastya/Qt/5.9.1/android_armv7/src/android/java/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 427,
+                        "endColumn": 84,
+                        "endOffset": 507
+                    }
+                }
+            }
+        ]
+    }
+]
